@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Aplikasi - Guardian Smart Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/guardian/demo_guardian.css') }}">
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Demo Aplikasi Guardian Smart Home</h1>
+      <p class="subtitle">Jelajahi fitur-fitur canggih dan antarmuka yang intuitif dari sistem keamanan rumah pintar terdepan</p>
+    </div>
+
+    <div class="gallery-wrapper">
+      <div class="gallery" id="gallery">
+        <!-- Demo images will be loaded here -->
+      </div>
+    </div>
+
+    <div class="back-section">
+      <a href="#" class="back-button" onclick="goBack()">
+        <span>←</span>
+        <span>Kembali ke Beranda</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Modal for image preview -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <img id="modalImage" src="" alt="">
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script/guardian/demo_guardian.js') }}"></script>
+
+</body>
+</html>

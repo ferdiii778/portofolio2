@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='image/logo/logo.png') }}">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Porto<span>Folio</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#portfolio">Portofolio</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-title">Halo, Saya <span>Mohammad Ferdi Darmawan</span></h1>
+                <p class="animate-tulisan">Frontend Developer & UI/UX Designer</p>
+                <div class="hero-btns animate-buttons">
+                    <a href="#portfolio" class="btn">Lihat Karya</a>
+                    <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+        <!-- Tambahkan elemen-elemen animasi background -->
+        <div class="animated-bg">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+            <div class="shape shape4"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="{{ url_for('static', filename='image/person/profil.jpg') }}" alt="Foto profil">
+                </div>
+                <div class="about-text">
+                    <h3>Frontend Developer dengan Passion untuk UI/UX</h3>
+                    <p>Saya adalah seorang pengembang web frontend dengan pengalaman 1 tahun dalam membangun dan mendesain website yang menarik dan responsif. Saya fokus pada pengalaman pengguna yang intuitif dan desain yang bersih.</p>
+                    <p>Dengan latar belakang dalam desain grafis dan pengembangan web, saya memiliki pemahaman yang kuat tentang bagaimana menggabungkan estetika visual dengan fungsionalitas untuk menciptakan produk digital yang luar biasa.</p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Javascript</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Riwayat Pendidikan</h2>
+            <div class="timeline position-relative">
+                <!-- Garis Timeline -->
+                <div class="timeline-line"></div>
+                
+                <!-- Item Pendidikan 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="timeline-content shadow-sm">
+                        <div class="timeline-header">
+                            <h3>Sekolah Dasar</h3>
+                            <span class="timeline-date">2011 - 2016</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Menyelesaikan pendidikan dasar di Bogor, Indonesia dengan fondasi pendidikan yang kuat. </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item Pendidikan 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="timeline-content shadow-sm">
+                        <div class="timeline-header">
+                            <h3>Sekolah Menengah Pertama</h3>
+                            <span class="timeline-date">2016 - 2019</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Menempuh pendidikan SMP di Bogor, Indonesia dengan pengenalan awal pada kemampuan teknologi dan komputer.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item Pendidikan 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content shadow-sm">
+                        <div class="timeline-header">
+                            <h3>SMK - Multimedia</h3>
+                            <span class="timeline-date">2019 - 2022</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Menyelesaikan pendidikan kejuruan dengan jurusan RPL (Rekayasa Perangkat Lunak) dengan pengalaman praktis dalam pemrograman dan pengembangan aplikasi.</p>
+                            <div class="timeline-icons">
+                                <span class="badge bg-secondary">Programming</span>
+                                <span class="badge bg-warning text-dark">Editing Video</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item Pendidikan 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content shadow-sm">
+                        <div class="timeline-header">
+                            <h3>Perguruan Tinggi</h3>
+                            <span class="timeline-date">2022 - Sekarang</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mahasiswa jurusan Teknik Informatika dengan fokus pada pengembangan web dan mobile.</p>
+                            <div class="timeline-icons">
+                                <span class="badge bg-primary">Web Development</span>
+                                <span class="badge bg-success">Mobile Apps</span>
+                                <span class="badge bg-info">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portofolio</h2>
+            <div class="portfolio-items">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="{{ url_for('static', filename='image/fashfit/ecommerce.png') }}" alt="Proyek 1">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Website E-commerce</h3>
+                        <p>Desain dan pengembangan website e-commerce responsif untuk brand fashion lokal.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">CSS</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                            <span class="portfolio-tag">Flask</span>
+                            <span class="portfolio-tag">Python</span>
+                        </div>
+                        <a href="{{ url_for('detail_fashfit')}}" class="btn">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="{{ url_for('static', filename='image/fashfit/mobile.jpg') }}" alt="Proyek 2">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Aplikasi E-Commerce Mobile</h3>
+                        <p>Desain dan pengembangan Aplikasi Mobile E-Commerce responsif untuk brand fashion lokal.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Flutter</span>
+                            <span class="portfolio-tag">Dart</span>
+                            <span class="portfolio-tag">Python</span>
+                            <span class="portfolio-tag">Flask</span>
+                        </div>
+                        <a href="#" class="btn">Lihat Detail</a>
+                    </div>
+                </div> -->
+
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="{{ url_for('static', filename='image/guardiansmarthome/guardiansmarthomemockup.png') }}" alt="Proyek 3">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Website Portfolio Fotografi</h3>
+                        <p>Website gallery untuk fotografi dengan antarmuka yang elegan dan responsif.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Flutter</span>
+                            <span class="portfolio-tag">Python</span>
+                            <span class="portfolio-tag">Flask</span>
+                        </div>
+                        <a href="{{ url_for('detail_guardian')}}" class="btn">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Mari Bekerja Sama</h3>
+                    <p>Jika Anda tertarik untuk bekerja sama atau memiliki pertanyaan, jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk proyek baru dan peluang kolaborasi.</p>
+                    <ul class="contact-details">
+                        <li>
+                            <i>📧</i>
+                            <span>ferdid047@gmail.com</span>
+                        </li>
+                        <li>
+                            <i>📱</i>
+                            <span>+62 857 7861 2820</span>
+                        </li>
+                        <li>
+                            <i>📍</i>
+                            <span>Brebes, Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" method="POST" action="/send_message">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Kirim Pesan</button>
+                    </form>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://linkedin.com/in/mohammad-ferdi-darmawan-541387268"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/ferdiii778"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.youtube.com/@mohammadferdi8309"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <p class="footer-text">&copy; 2025 Portofolio Mohammad Ferdi Darmawan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</body>
+</html>

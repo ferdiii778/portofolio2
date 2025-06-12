@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Proyek: FashFit</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/fashfit/demo_fashfit.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="project-title">FashFit</h1>
+            <p class="project-subtitle">Aplikasi Virtual Fashion Fitting Berbasis AI</p>
+        </div>
+        
+        <div class="hero-section">
+            <img src="{{ url_for('static', filename='image/fashfit/fashfit.png') }}" alt="FashFit Preview" class="hero-image">
+            <p class="project-desc">
+                FashFit adalah aplikasi fashion fitting inovatif berbasis AI yang memungkinkan pengguna untuk mencoba pakaian secara virtual menggunakan kamera mereka. Dibangun menggunakan teknologi Flutter, Flask, dan Python dengan integrasi AI pengenal tubuh yang canggih, FashFit membawa pengalaman berbelanja online ke level berikutnya.
+            </p>
+        </div>
+        
+        <h2 class="features-title">Fitur Utama</h2>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="{{ url_for('static', filename='image/fashfit/ecommerce.png') }}" alt="Dashboard FashFit" class="feature-image">
+                <div class="feature-content">
+                    <h3 class="feature-title">Dashboard Interaktif</h3>
+                    <p class="feature-desc">Menampilkan daftar produk fashion yang tersedia dengan berbagai pilihan filter. Pengguna dapat mencari, memfilter, dan memilih pakaian untuk dicoba secara virtual dengan antarmuka yang intuitif.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <img src="{{ url_for('static', filename='image/fashfit/login.png') }}" alt="Login FashFit" class="feature-image">
+                <div class="feature-content">
+                    <h3 class="feature-title">Autentikasi Aman</h3>
+                    <p class="feature-desc">Pengguna dapat masuk ke akun mereka menggunakan email dan kode OTP yang dikirim ke email, memastikan keamanan dan kemudahan akses tanpa perlu mengingat password.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <img src="{{ url_for('static', filename='image/fashfit/register.png') }}" alt="Register FashFit" class="feature-image">
+                <div class="feature-content">
+                    <h3 class="feature-title">Registrasi Cepat</h3>
+                    <p class="feature-desc">Pengguna baru dapat mendaftar dengan mudah, hanya dengan memasukkan email mereka, kemudian melakukan verifikasi melalui OTP untuk mulai menggunakan FashFit dalam hitungan menit.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <img src="{{ url_for('static', filename='image/fashfit/profile.png') }}" alt="Profile FashFit" class="feature-image">
+                <div class="feature-content">
+                    <h3 class="feature-title">Manajemen Profil</h3>
+                    <p class="feature-desc">Menampilkan informasi pribadi pengguna seperti nama, jenis kelamin, dan tanggal lahir. Pengguna juga dapat memperbarui data mereka untuk mendapatkan rekomendasi pakaian yang lebih akurat.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <img src="{{ url_for('static', filename='image/fashfit/chatbot.png') }}" alt="Chatbot FashFit" class="feature-image">
+                <div class="feature-content">
+                    <h3 class="feature-title">Asisten Fashion AI</h3>
+                    <p class="feature-desc">Pengguna dapat berinteraksi dengan chatbot berbasis AI untuk mendapatkan rekomendasi pakaian, saran gaya, dan bantuan seputar penggunaan aplikasi yang disesuaikan dengan preferensi mereka.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <img src="{{ url_for('static', filename='image/fashfit/review aplikasi.png') }}" alt="Review FashFit" class="feature-image">
+                <div class="feature-content">
+                    <h3 class="feature-title">Ulasan Komunitas</h3>
+                    <p class="feature-desc">Pengguna dapat memberikan ulasan dan rating terhadap aplikasi FashFit, serta membaca pengalaman pengguna lain untuk meningkatkan pengalaman berbelanja mereka.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2025 FashFit. Semua hak dilindungi.</p>
+        </div>
+    </div>
+</body>
+</html>

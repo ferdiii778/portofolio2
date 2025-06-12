@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guardian Smart Home - Keamanan Rumah Masa Depan</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/guardian/detail_guardian.css') }}">
+</head>
+<body>
+  <div class="bg-animation"></div>
+  
+  <div class="container">
+    <div class="header">
+      <h1 class="project-title">Guardian Smart Home</h1>
+      <p class="project-subtitle">
+        Revolusi Keamanan Rumah dengan Teknologi AI Terdepan dan Sistem Monitoring 24/7
+      </p>
+    </div>
+
+    <div class="hero-section centered-image">
+      <img src="{{ url_for('static', filename='image/guardiansmarthome/first.png') }}" alt="Face Recognition">
+    </div>
+
+
+    <p class="description">
+      Guardian Smart Home menghadirkan keamanan rumah masa depan dengan teknologi AI canggih, pengenalan wajah real-time, 
+      dan sistem pemantauan CCTV yang cerdas. Lindungi keluarga Anda dengan solusi keamanan yang paling terpercaya.
+    </p>
+
+    <div class="stats-section">
+      <div class="stat-card">
+        <div class="stat-number">99.9%</div>
+        <div class="stat-label">Akurasi Deteksi</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Monitoring Aktif</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">5+</div>
+        <div class="stat-label">Rumah Terlindungi</div>
+      </div>
+    </div>
+
+    <h2 class="features-title">Fitur Unggulan Terdepan</h2>
+    <p class="features-subtitle">
+      Teknologi keamanan paling canggih untuk melindungi yang Anda cintai
+    </p>
+    
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=220&fit=crop" alt="Dashboard CCTV">
+        <div class="card-body">
+          <h3 class="card-title">🎯 Dashboard CCTV Real-Time</h3>
+          <p class="card-desc">
+            Pantau semua kamera yang terhubung secara langsung. Dilengkapi dengan AI untuk mendeteksi wajah asing saat Mode Siaga aktif.
+          </p>
+          <div class="card-features">
+            <span class="feature-tag">Streaming Langsung</span>
+            <span class="feature-tag">Deteksi Wajah</span>
+            <span class="feature-tag">Mode Siaga</span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=220&fit=crop" alt="Secure Login">
+        <div class="card-body">
+          <h3 class="card-title">🔐 Login Aman & Biometrik</h3>
+          <p class="card-desc">
+            Masuk ke akun dengan Google dan autentikasi sidik jari. Sistem menyimpan histori login lengkap dengan lokasi perangkat.
+          </p>
+          <div class="card-features">
+            <span class="feature-tag">Google Sign-In</span>
+            <span class="feature-tag">Fingerprint</span>
+            <span class="feature-tag">Histori Login</span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=220&fit=crop" alt="Registrasi Cepat">
+        <div class="card-body">
+          <h3 class="card-title">⚡ Registrasi Mudah</h3>
+          <p class="card-desc">
+            Daftarkan akun Anda hanya dengan beberapa langkah sederhana dan mulai atur sistem keamanan rumah Anda sendiri.
+          </p>
+          <div class="card-features">
+            <span class="feature-tag">Cepat & Mudah</span>
+            <span class="feature-tag">Tanpa Ribet</span>
+            <span class="feature-tag">Akses Langsung</span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="{{ url_for('static', filename='image/guardiansmarthome/profile.jpg') }}" alt="Profil Pengguna">
+        <div class="card-body">
+          <h3 class="card-title">👤 Manajemen Profil</h3>
+          <p class="card-desc">
+            Atur username dan foto profil pengguna dengan mudah. Fitur logout dan edit profil tersedia secara langsung.
+          </p>
+          <div class="card-features">
+            <span class="feature-tag">Edit Profil</span>
+            <span class="feature-tag">Foto Pengguna</span>
+            <span class="feature-tag">Logout</span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="{{ url_for('static', filename='image/guardiansmarthome/face recognition.jpg') }}" alt="Face Recognition">
+        <div class="card-body">
+          <h3 class="card-title">🤖 Deteksi & Pengenalan Wajah</h3>
+          <p class="card-desc">
+            Sistem AI mengenali wajah penghuni dan mendeteksi wajah asing secara otomatis dengan notifikasi real-time.
+          </p>
+          <div class="card-features">
+            <span class="feature-tag">Pengenalan Wajah</span>
+            <span class="feature-tag">Wajah Tak Dikenal</span>
+            <span class="feature-tag">Notifikasi AI</span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="{{ url_for('static', filename='image/guardiansmarthome/cctv.png') }}" alt="Manajemen CCTV">
+        <div class="card-body">
+          <h3 class="card-title">📹 Tambah & Kelola CCTV</h3>
+          <p class="card-desc">
+            Tambahkan kamera CCTV baru ke sistem, ubah konfigurasi, atau hapus kamera yang tidak diperlukan secara instan.
+          </p>
+          <div class="card-features">
+            <span class="feature-tag">Tambah Kamera</span>
+            <span class="feature-tag">Edit & Hapus</span>
+            <span class="feature-tag">Konfigurasi Mudah</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cta-section">
+      <h2 class="cta-title">Siap Melindungi Rumah Anda?</h2>
+      <p class="cta-subtitle">
+        Bergabunglah dengan ribuan keluarga yang telah merasakan keamanan terdepan dengan Guardian Smart Home.
+      </p>
+      <div class="cta-buttons">
+        <a href="{{ url_for('demo_guardian') }}" class="cta-button primary">
+          🚀 Lihat Demo Aplikasi
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-bottom">
+        <p>© 2025 Guardian Smart Home. Semua hak cipta dilindungi. Powered by Advanced AI Technology.</p>
+      </div>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script/guardian/detail_guardian.js') }}"></script>
+  
+</body>
+</html>
